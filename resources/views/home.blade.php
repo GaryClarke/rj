@@ -58,9 +58,8 @@
 
             @if(Auth::user()->profile_picture)
 
-                {{-- todo - add file path --}}
                 <div class="col-md-4">
-                    <img src="" style="max-width: 250px; max-height: 250px">
+                    <img class="profile-picture" src="/images/{{ auth()->user()->profile_picture }}">
                 </div>
 
             @endif
